@@ -196,8 +196,9 @@ obj.load("text", T(text))
 local temp = obj.w/2
 if flagOpposX == 1 then
 	temp = temp * -1
-end
+end	
 
+local alignSide = 0
 if alignSideMode==0 then
 	alignSide = temp
 elseif alignSideMode==2 then
@@ -209,6 +210,7 @@ if flagOpposY == 1 then
 	temp = -temp
 end
 
+local alignUp = 0
 if alignUpMode==2 then
 	alignUp = -temp
 elseif alignUpMode==0 then
